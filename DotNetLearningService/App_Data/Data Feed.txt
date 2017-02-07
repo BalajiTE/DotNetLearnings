@@ -1,0 +1,234 @@
+﻿USE [DotNetLearnings]
+
+/* DELETE EXISTING DATA FROM TABLES AND RESET PK IDENTITY TO ZERO */
+DELETE FROM [dbo].[LanguageConcept]
+DBCC CHECKIDENT (LanguageConcept, RESEED, 0)
+
+DELETE FROM [dbo].[TechnologyConcept]
+DBCC CHECKIDENT (TechnologyConcept, RESEED, 0)
+
+DELETE FROM [dbo].[TechnologyLanguage]
+DBCC CHECKIDENT (TechnologyLanguage, RESEED, 0)
+
+DELETE FROM [dbo].[TechnologyType]
+DBCC CHECKIDENT (TechnologyType, RESEED, 0)
+
+/* START OF: INSERT DATA INTO TECHNOLOGYTYPE TABLE */
+SET IDENTITY_INSERT [dbo].[TechnologyType] ON
+
+INSERT INTO [dbo].[TechnologyType]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(1, 'Scripting', 'Scripting', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyType]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(2, 'ORM', 'ORM', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyType]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(3, 'Styling', 'Styling', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyType]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(4, 'Database', 'Database', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyType]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(5, 'Programming', 'Programming', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyType]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(6, 'Webservices', 'Styling', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyType]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(7, 'Design Patterns', 'Design Patterns', 1, '2016-11-19 00:00:00.000', getDate())
+
+SET IDENTITY_INSERT [dbo].[TechnologyType] OFF
+/* END OF: INSERT DATA INTO TECHNOLOGYTYPE TABLE */
+
+/* START OF: INSERT DATA INTO TECHNOLOGYLANGUAGE TABLE */
+SET IDENTITY_INSERT [dbo].[TechnologyLanguage] ON
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(1, 'JavaScript', 'JavaScript', 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(2, 'AJAX', 'AJAX', 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(3, 'JQuery', 'JQuery', 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(4, 'AngularJS', 'AngularJS', 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(5, 'Entity Framework', 'Entity Framework', 1, 2, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(6, 'CSS', 'CSS', 1, 3, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(7, 'Bootstrap', 'Bootstrap', 1, 3, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(8, 'SQL Server', 'SQL Server', 1, 4, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(9, 'ASP.NET', 'ASP.NET', 1, 5, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(10, 'MVC', 'MVC', 1, 5, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(11, 'C#', 'C#', 1, 5, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(12, 'OOP', 'Object Oriented Programming', 1, 5, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(13, 'XML Webservices', 'XML Webservices', 1, 6, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(14, 'WCF', 'WCF', 1, 6, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(15, 'WebApi', 'WebApi', 1, 6, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyLanguage]
+([ID],[Name],[Description],[Active],[TechnologyTypeID],[CreateDate],[ModifiedDate]) VALUES 
+(16, 'Design Patterns', 'Design Patterns', 1, 7, '2016-11-19 00:00:00.000', getDate())
+
+SET IDENTITY_INSERT [dbo].[TechnologyLanguage] OFF
+/* END OF: INSERT DATA INTO TECHNOLOGYLANGUAGE TABLE */
+
+/* START OF: INSERT DATA INTO TECHNOLOGYCONCEPT TABLE */
+SET IDENTITY_INSERT [dbo].[TechnologyConcept] ON
+
+INSERT INTO [dbo].[TechnologyConcept]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(1, 'Authentication', 'Authentication', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyConcept]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(2, 'Authorization', 'Authorization', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyConcept]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(3, 'Routing', 'Routing', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyConcept]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(4, 'Validation', 'Validation', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyConcept]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(5, 'Singleton', 'Singleton', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyConcept]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(6, 'Factory', 'Factory', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyConcept]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(7, 'Repository', 'Repository', 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[TechnologyConcept]
+([ID],[Name],[Description],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(8, 'MVVM', 'MVVM', 1, '2016-11-19 00:00:00.000', getDate())
+
+SET IDENTITY_INSERT [dbo].[TechnologyConcept] OFF
+/* END OF: INSERT DATA INTO TECHNOLOGYCONCEPT TABLE */
+
+/* START OF: INSERT DATA INTO LANGUAGECONCEPT TABLE */
+SET IDENTITY_INSERT [dbo].[LanguageConcept] ON
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(1, 9, 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(2, 9, 2, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(3, 9, 3, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(4, 9, 4, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(5, 10, 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(6, 10, 2, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(7, 10, 3, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(8, 10, 4, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(9, 13, 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(10, 13, 2, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(11, 14, 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(12, 14, 2, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(13, 15, 1, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(14, 15, 2, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(15, 16, 5, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(16, 16, 6, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(17, 16, 7, 1, '2016-11-19 00:00:00.000', getDate())
+
+INSERT INTO [dbo].[LanguageConcept]
+([ID],[TechnologyLanguageID],[TechnologyConceptID],[Active],[CreateDate],[ModifiedDate]) VALUES 
+(18, 16, 8, 1, '2016-11-19 00:00:00.000', getDate())
+
+SET IDENTITY_INSERT [dbo].[LanguageConcept] OFF
+/* END OF: INSERT DATA INTO LANGUAGECONCEPT TABLE */

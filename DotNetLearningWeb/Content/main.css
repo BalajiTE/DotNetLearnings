@@ -1,0 +1,89 @@
+﻿/* Global Styles */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+/* Start: File upload styles */
+.fileinput-button 
+{
+	position: relative;
+	overflow: hidden;
+}
+
+.dropdown {
+    cursor:pointer;
+}
+
+.fileinput-button input 
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	transform: translate(-300px, 0) scale(4);
+	font-size: 23px;
+	direction: ltr;
+	cursor: pointer;
+}
+/* End: File upload styles */
+
+/* Modal dialog customized style */
+.custom-modal-body {
+  position: relative;
+  padding: 15px;
+  width: 100%;
+  max-height: 650px;  
+  overflow-y: auto;
+  margin-right: 0 !important;
+}
+
+.modal-backdrop {
+  bottom:0;
+}
+
+/* Gives a transparent backdrop  */
+.modal-nobackdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;  
+  background-color: transparent;  
+}
+
+.left-panel {
+  float: left;
+}
+
+.left-panel img {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+}
+
+.right-panel {
+  float: left;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.right-panel span:first-child {
+  font-size: 16px;
+}
+
+.right-panel span:nth-child(2) {
+  font-size: 14px;
+  color: gray;
+}
+
+.right-panel span:last-child {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+}
