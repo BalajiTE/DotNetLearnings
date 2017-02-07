@@ -1,0 +1,10 @@
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\DotNetLearningModel.dll.config
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\DotNetLearningModel.dll
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\DotNetLearningModel.pdb
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\EntityFramework.dll
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\EntityFramework.xml
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.dll
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.pdb
+C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.csprojResolveAssemblyReference.cache
