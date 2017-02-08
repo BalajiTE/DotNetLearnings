@@ -8,3 +8,13 @@ C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\Entity
 C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.dll
 C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.pdb
 C:\Learning\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.csprojResolveAssemblyReference.cache
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\DotNetLearningModel.dll.config
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\DotNetLearningModel.dll
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\DotNetLearningModel.pdb
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\EntityFramework.dll
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\EntityFramework.xml
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.dll
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.pdb
+C:\Learnings\Solutions\DotNetLearnings\DotNetLearnings\DotNetLearningModel\obj\Debug\DotNetLearningModel.csprojResolveAssemblyReference.cache
